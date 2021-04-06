@@ -1,0 +1,33 @@
+digraph Tree {
+node [color="black", fontname=helvetica, shape=box, style="filled, rounded"];
+edge [fontname=helvetica];
+0 [fillcolor="#f3c4a3", label=<plasma_concentration &le; 0.363<br/>entropy = 0.932<br/>samples = 537<br/>value = [350, 187]<br/>class = 0>];
+1 [fillcolor="#eca16b", label=<age &le; -0.318<br/>entropy = 0.727<br/>samples = 370<br/>value = [295, 75]<br/>class = 0>];
+0 -> 1  [headlabel="True", labelangle=45, labeldistance="2.5"];
+2 [fillcolor="#e89050", label=<bmi &le; 1.702<br/>entropy = 0.481<br/>samples = 212<br/>value = [190, 22]<br/>class = 0>];
+1 -> 2;
+3 [fillcolor="#e78c4b", label=<entropy = 0.411<br/>samples = 206<br/>value = [189, 17]<br/>class = 0>];
+2 -> 3;
+4 [fillcolor="#61b1ea", label=<entropy = 0.65<br/>samples = 6<br/>value = [1, 5]<br/>class = 1>];
+2 -> 4;
+5 [fillcolor="#f2c19d", label=<bmi &le; -0.646<br/>entropy = 0.92<br/>samples = 158<br/>value = [105, 53]<br/>class = 0>];
+1 -> 5;
+6 [fillcolor="#e78946", label=<entropy = 0.337<br/>samples = 32<br/>value = [30, 2]<br/>class = 0>];
+5 -> 6;
+7 [fillcolor="#f7d7c0", label=<entropy = 0.974<br/>samples = 126<br/>value = [75, 51]<br/>class = 0>];
+5 -> 7;
+8 [fillcolor="#9acdf2", label=<plasma_concentration &le; 1.052<br/>entropy = 0.914<br/>samples = 167<br/>value = [55, 112]<br/>class = 1>];
+0 -> 8  [headlabel="False", labelangle="-45", labeldistance="2.5"];
+9 [fillcolor="#fafdfe", label=<bmi &le; -0.259<br/>entropy = 1.0<br/>samples = 81<br/>value = [40, 41]<br/>class = 1>];
+8 -> 9;
+10 [fillcolor="#eda978", label=<entropy = 0.795<br/>samples = 25<br/>value = [19, 6]<br/>class = 0>];
+9 -> 10;
+11 [fillcolor="#b0d8f5", label=<entropy = 0.954<br/>samples = 56<br/>value = [21, 35]<br/>class = 1>];
+9 -> 11;
+12 [fillcolor="#63b2ea", label=<bmi &le; -1.129<br/>entropy = 0.668<br/>samples = 86<br/>value = [15, 71]<br/>class = 1>];
+8 -> 12;
+13 [fillcolor="#e58139", label=<entropy = 0.0<br/>samples = 2<br/>value = [2, 0]<br/>class = 0>];
+12 -> 13;
+14 [fillcolor="#5dafea", label=<entropy = 0.622<br/>samples = 84<br/>value = [13, 71]<br/>class = 1>];
+12 -> 14;
+}
